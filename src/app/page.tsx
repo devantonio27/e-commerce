@@ -1,9 +1,9 @@
-import { Button } from "@/components/ui/button";
+import Authentication from "./authentication/page";
 
 const Home = () => {
   return (
     <div>
-      <Button className="">Bootcamp</Button>
+      <Authentication></Authentication>
     </div>
   );
 };
