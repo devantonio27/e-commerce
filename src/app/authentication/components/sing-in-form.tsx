@@ -62,7 +62,7 @@ const SingInForm = () => {
                     <FormLabel>Email</FormLabel>
                     <FormControl>
                       <Input
-                        placeholder="Digite seu email"
+                        placeholder="Digite seu email."
                         type="email"
                         {...field}
                       />
@@ -79,7 +79,7 @@ const SingInForm = () => {
                     <FormLabel>Senha</FormLabel>
                     <FormControl>
                       <Input
-                        placeholder="Digite sua senha"
+                        placeholder="Digite sua senha."
                         type="password"
                         {...field}
                       />
