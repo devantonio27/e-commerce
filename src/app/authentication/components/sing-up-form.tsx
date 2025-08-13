@@ -71,9 +71,9 @@ const SingUpForm = () => {
         },
         onError: (error) => {
           if (error.error.code === "USER_ALREADY_EXISTS") {
-            toast.error("Email já cadastrado.");
+            toast.error("E-mail já cadastrado.");
             form.setError("email", {
-              message: "Email já cadastrado.",
+              message: "E-mail já cadastrado.",
             });
             toast.error(error.error.message);
           }
