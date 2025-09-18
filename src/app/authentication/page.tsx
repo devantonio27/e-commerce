@@ -1,5 +1,6 @@
 "use client";
 
+import { Header } from "@/components/common/header";
 import { Button } from "@/components/ui/button";
 import {
   Card,
@@ -18,20 +19,24 @@ import SingUpForm from "./components/sing-up-form";
 
 const Authentication = () => {
   return (
-    <div className="flex w-full max-w-sm flex-col gap-6 p-5">
-      <Tabs defaultValue="sing-in">
-        <TabsList>
-          <TabsTrigger value="sing-in">Entrar</TabsTrigger>
-          <TabsTrigger value="sing-up">Criar conta</TabsTrigger>
-        </TabsList>
-        <TabsContent value="sing-in">
-          <SingInForm />
-        </TabsContent>
-        <TabsContent value="sing-up">
-          <SingUpForm />
-        </TabsContent>
-      </Tabs>
-    </div>
+    <>
+      <Header />
+
+      <div className="flex w-full flex-col gap-6 p-5">
+        <Tabs defaultValue="sing-in">
+          <TabsList>
+            <TabsTrigger value="sing-in">Entrar</TabsTrigger>
+            <TabsTrigger value="sing-up">Criar conta</TabsTrigger>
+          </TabsList>
+          <TabsContent value="sing-in" className="w-full">
+            <SingInForm />
+          </TabsContent>
+          <TabsContent value="sing-up" className="w-full">
+            <SingUpForm />
+          </TabsContent>
+        </Tabs>
+      </div>
+    </>
   );
 };
 
